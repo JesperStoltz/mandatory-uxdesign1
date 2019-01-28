@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="mds.js"></script>
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" type="text/css" href="mds.css" /></script>   
+  </head>
+
+  <body>
+    <main>
+      <h1>Textfield</h1>
+        <div class="mds-text-field">
+            <input class ="mds-text-field__input" type="text">
+            <span class = "mds-text-field__input--underline"></span>
+            <label class = "mds-text-field__label">Name:</label>
+        </div>
+
+      
+
+          
+
+        <h1>Switch</h1>
+        <div class="mds-switch">
+            
+            <label class ="mds-switch__label">
+                <input class ="mds-switch__checkbox" type="checkbox" checked="checked">
+                <span class ="mds-switch__slider"></span>
+            </label>
+
+        </div>
+
+        <h1>Checkboxes</h1>
+
+        <label class="mds-checkbox">
+            <input type="checkbox"class = "mds-checkbox__input" checked="checked">
+            <span class="mds-checkbox__span"></span>
+          </label><br>
+ 
+        <h1>Radio Buttons</h1>
+        <label class="mds-radio">
+            <input type="radio" checked="checked" name="radio" class="mds-radio__input">
+            <span class="mds-radio__span"></span>
+          </label><br><br>
+          <label class="mds-radio">
+            <input type="radio" checked="checked" name="radio" class="mds-radio__input">
+            <span class="mds-radio__span"></span>
+          </label><br><br>
+
+        <button id = "disableButton">Disable all</button>
+        <button id = "enableButton">Enable all</button>
+
+    </main>
+    <script>
+              let text_Field = document.querySelector(".mds-text-field");
+              mds.textField(text_Field);
+  </script>
+  </body>
+</html>
